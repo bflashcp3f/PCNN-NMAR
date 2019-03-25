@@ -43,7 +43,7 @@ Train a PCNN-NMAR model with a specific configuration:
 python train.py --data_dir data/NYTFB-68K --lr 0.001 --penal_scalar 1000 --num_epoch 15 --save_dir saved_models/
 ```
 
-With above command, the model's checkpoint with best sentential AUC performance will be saved to `./saved_models/` as `NYTFB-68K_lr0.001_penal1000_best_model.tar`. You can save the checkpoint of every epoch by setting `--save_each_epoch True`, and perform heldou evaluation with `--heldout_eval True`.
+With the above command, the model's checkpoint with best sentential AUC performance will be saved to `./saved_models/` as `NYTFB-68K_lr0.001_penal1000_best_model.tar`. You can save the checkpoint of every epoch by setting `--save_each_epoch True`, and perform heldou evaluation with `--heldout_eval True`.
 
 
 
@@ -60,7 +60,7 @@ Heldout evaluation.
 ```
 python eval.py --data_dir data/NYTFB-68K --model_dir checkpoints_in_paper/ --model_name NYTFB-68K_heldout.tar --heldout_eval True
 ```
-
+You can also print out the configuration of the model by setting `--print_config True`
 
 ## Reproduce
 

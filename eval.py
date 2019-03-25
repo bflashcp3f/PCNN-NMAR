@@ -126,8 +126,6 @@ def main():
     else:
         model_file_list = [args.model_dir + '/' + args.model_name]
     
-    # model_file = args.model_dir + '/' + args.model_name
-    
     for model_file in model_file_list:
 
         # Load input model
@@ -135,11 +133,10 @@ def main():
         PCNN_NMAR_model = PCNN_NMAR(word_vec, opt)
         checkpoint = torch.load(model_file)
         PCNN_NMAR_model.load_state_dict(checkpoint['state_dict'])
-        # model_config = torch.load(model_file)['config']
+        model_config = torch.load(model_file)['config']
 
-        # if opt['print_config']:
-            # helper.print_config(model_config)
-
+        if opt['print_config']:
+            helper.print_config(model_config)
 
         if opt['cuda']:
             PCNN_NMAR_model.cuda()
