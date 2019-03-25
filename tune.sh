@@ -34,7 +34,7 @@ gpus=${2}
 epoch_num=15
 
 gpu_num=$(echo "$gpus" | wc -w)
-data_name=$(echo "$data_dir" |  sed -e 's/\/.*\///g')
+data_name=$(echo "$data_dir" | awk -F/ '{print $NF}')
 
 scalar_num=20
 scalars_per_session=3
