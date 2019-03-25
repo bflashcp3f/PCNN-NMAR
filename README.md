@@ -66,7 +66,7 @@ python eval.py --data_dir data/NYTFB-68K --model_dir checkpoints_in_paper/ --mod
 
 Since PCNN-NMAR is sensitive to the initialization, if you want to train the model from scratch to reproduce the result in our paper, you can run the script `tune.sh` with data directory and available GPU ids:
 ```
-sh tune.sh "data/NYTFB-68K" "0 1 2 3”
+sh tune.sh "data/NYTFB-68K" "0 1 2 3"
 ```
 
 This script will tune hyperparameters KB disagreement penalty scalars among {100, 200, ..., 2000} and learning rates among {0.001, 0.01}.
