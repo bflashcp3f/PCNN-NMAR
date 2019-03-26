@@ -3,8 +3,14 @@ Structured Minimally Supervised Learning for Neural Relation Extraction
 
 
 
-This repo contains the *pytorch* code for paper [Structured Minimally Supervised Learning for Neural Relation Extraction.]().
+This repo contains the *pytorch* code for paper [Structured Minimally Supervised Learning for Neural Relation Extraction]().
 
+        @inproceedings{bai2019structured,
+          author     = {Bai, Fan and Ritter, Alan},
+          title      = {Structured Minimally Supervised Learning for Neural Relation Extraction},
+          booktitle  = {Proceedings of NAACL-HLT 2019},
+          year       = {2019}
+        } 
 
 
 
@@ -84,6 +90,6 @@ python eval.py --data_dir data/NYTFB-68K --model_dir saved_models/ --sentential_
 
 [Lin et al., 2016] Lin, Yankai  and  Shen, Shiqi  and  Liu, Zhiyuan  and  Luan, Huanbo  and  Sun, Maosong. Neural Relation Extraction with Selective Attention over Instances. In Proceedings of ACL. [C++ code/data](https://github.com/thunlp/NRE)
 
-
+[Bai et al. 2019] Bai, Fan and Ritter, Alan. Structured Minimally Supervised Learning for Neural Relation Extraction. In Proceedings of NAACL-HLT.
 
 
