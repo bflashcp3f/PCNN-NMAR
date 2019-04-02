@@ -24,7 +24,7 @@ This repo contains the *pytorch* code for paper [Structured Minimally Supervised
 
 
 ## Dataset
-Two datasets **NYTFB-68K/NYTFB-280K** can be found [here](https://drive.google.com/file/d/1FNRHVZP4aqhLwdmIcM8uiBVXTizNMNQP/view?usp=sharing). 
+Two datasets **NYTFB-68K/NYTFB-280K** can be found [here](https://drive.google.com/file/d/18BoPXHVUYBnUfXKH2mGvOesE0ELT0F4s/view?usp=sharing). 
 
 **NYTFB-68K**: Riedel et. al. HeldOut dataset.
 
