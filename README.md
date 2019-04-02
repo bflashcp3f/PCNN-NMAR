@@ -3,7 +3,7 @@ Structured Minimally Supervised Learning for Neural Relation Extraction
 
 
 
-This repo contains the *pytorch* code for paper [Structured Minimally Supervised Learning for Neural Relation Extraction]().
+This repo contains the *pytorch* code for paper [Structured Minimally Supervised Learning for Neural Relation Extraction](https://arxiv.org/abs/1904.00118).
 
         @inproceedings{bai2019structured,
           author     = {Bai, Fan and Ritter, Alan},
