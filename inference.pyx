@@ -162,10 +162,7 @@ def local_search(np.ndarray[DTYPE_FLOAT_T, ndim=2] post_z, np.ndarray[DTYPE_FLOA
 
 
         # Random initialization
-        # np.random.seed(i*10)
         init_z = np.random.randint(relation_num, size=sen_num, dtype=DTYPE_INT)
-        # if sen_num == 4:
-        #     print init_z
             
         for index_z in range(sen_num):
             z_value = init_z[index_z]
@@ -189,7 +186,6 @@ def local_search(np.ndarray[DTYPE_FLOAT_T, ndim=2] post_z, np.ndarray[DTYPE_FLOA
 
             # First search operator (change one variable)
             deltas = np.zeros((sen_num, relation_num), dtype=DTYPE_FLOAT)
-            # print deltas.shape
             
             
             for rel_index in range(relation_num):
@@ -210,7 +206,7 @@ def local_search(np.ndarray[DTYPE_FLOAT_T, ndim=2] post_z, np.ndarray[DTYPE_FLOA
                             deltas[sen_index, rel_index] -= rel_penality[init_z[sen_index]]
 
 
-            # Second search operator (switch all instances of relation r to NA)
+            # Second search operator (switch all instances of relation r1 to r2)
             deltas_aggregate = np.zeros((relation_num, relation_num), dtype=DTYPE_FLOAT)
 
             for r1 in range(relation_num):
@@ -247,8 +243,6 @@ def local_search(np.ndarray[DTYPE_FLOAT_T, ndim=2] post_z, np.ndarray[DTYPE_FLOA
 
                 # Change all instances of the max deltaNA relation to NA
                 score += delta_aggregate
-
-#                 (r1, r2) = np.unravel_index(deltas_aggregate.argmax(), deltas_aggregate.shape)
 
                 for sen_index_3 in range(sen_num):
                     if init_z[sen_index_3] == rel1:

@@ -24,7 +24,7 @@ This repo contains the *pytorch* code for paper [Structured Minimally Supervised
 
 
 ## Dataset
-Two datasets **NYTFB-68K/NYTFB-280K** can be found [here](https://drive.google.com/file/d/18BoPXHVUYBnUfXKH2mGvOesE0ELT0F4s/view?usp=sharing). 
+Two datasets **NYTFB-68K/NYTFB-280K** can be found [here](https://drive.google.com/file/d/15sJQP3cLry0QCHiEmh52yrt_IHudvB0b/view?usp=sharing). 
 
 **NYTFB-68K**: Riedel et. al. HeldOut dataset.
 
@@ -84,12 +84,12 @@ python eval.py --data_dir data/NYTFB-68K --model_dir saved_models/ --sentential_
 
 
 ## Reference
-[Riedel et al. 2010] Sebastian Riedel and Limin Yao and Andrew McCallum. Modeling Relations and Their Mentions without Labeled Text. In Proceedings of ECML.
+[Riedel et al., 2010] Sebastian Riedel and Limin Yao and Andrew McCallum. Modeling Relations and Their Mentions without Labeled Text. In Proceedings of ECML.
 
 [Hoffmann et al., 2011] Hoffmann, Raphael  and  Zhang, Congle  and  Ling, Xiao  and  Zettlemoyer, Luke  and  Weld, Daniel S. Knowledge-Based Weak Supervision for Information Extraction of Overlapping Relations. In Proceedings of ACL.
 
 [Lin et al., 2016] Lin, Yankai  and  Shen, Shiqi  and  Liu, Zhiyuan  and  Luan, Huanbo  and  Sun, Maosong. Neural Relation Extraction with Selective Attention over Instances. In Proceedings of ACL. [C++ code/data](https://github.com/thunlp/NRE)
 
-[Bai et al. 2019] Bai, Fan and Ritter, Alan. Structured Minimally Supervised Learning for Neural Relation Extraction. In Proceedings of NAACL-HLT.
+[Bai et al., 2019] Bai, Fan and Ritter, Alan. Structured Minimally Supervised Learning for Neural Relation Extraction. In Proceedings of NAACL-HLT.
 
 
