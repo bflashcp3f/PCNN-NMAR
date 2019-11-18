@@ -51,6 +51,7 @@ python train.py --data_dir data/NYTFB-68K --lr 0.001 --penal_scalar 1000 --num_e
 
 With the above command, the model's checkpoint with best sentential AUC performance will be saved to `./saved_models/` as `NYTFB-68K_lr0.001_penal1000_best_model.tar`. You can save the checkpoint of every epoch by setting `--save_each_epoch True`, and perform heldou evaluation with `--heldout_eval True`.
 
+Note: In the newest arXiv version of the paper, "Bag-Size Adaptive Learning Rate" has been rephrased as "Bag-Size Weighting Function" (a better presentation of the algorithm). Since it doesn't affect how the algorithm works, we don't modify the code.
 
 
 ## Evaluation
