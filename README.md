@@ -5,12 +5,19 @@ Structured Minimally Supervised Learning for Neural Relation Extraction
 
 This repo contains the *pytorch* code for paper [Structured Minimally Supervised Learning for Neural Relation Extraction](https://arxiv.org/abs/1904.00118).
 
-        @inproceedings{bai2019structured,
-          author     = {Bai, Fan and Ritter, Alan},
-          title      = {Structured Minimally Supervised Learning for Neural Relation Extraction},
-          booktitle  = {Proceedings of NAACL-HLT 2019},
-          year       = {2019}
-        } 
+    @inproceedings{bai-ritter-2019-structured,
+        title = "{S}tructured {M}inimally {S}upervised {L}earning for {N}eural {R}elation {E}xtraction",
+        author = "Bai, Fan  and
+          Ritter, Alan",
+        booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+        month = jun,
+        year = "2019",
+        address = "Minneapolis, Minnesota",
+        publisher = "Association for Computational Linguistics",
+        url = "https://www.aclweb.org/anthology/N19-1310",
+        doi = "10.18653/v1/N19-1310",
+        pages = "3057--3069",
+    } 
 
 
 
